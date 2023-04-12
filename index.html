@@ -41,7 +41,10 @@
     </style>
 
 </head>
-<body>
+<body width="100%" height="100%" style="margin:0px">
+
+    <canvas id="gameCanvas" hidden></canvas>
+    <script src="game_of_life.js"></script>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -57,148 +60,150 @@
             <ul class="nav navbar-nav">
                 <li><a href="">About</a></li>
                 <li><a href="#work">Work</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
 
         </div>
     </div>
 </nav>
 
-<div id="about" class="container-fluid text-center">
-    <div class="row content">
-        <div class="col-sm-3 sidenav"></div>
-        <div class="col-sm-6 text-left">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="documents/veljko.png" class="img-thumbnail" alt="veljko" width="200" height="200">
-                </div>
-                <div class="col-sm-8">
-                    <p class="text-justify">I am an Engineering Manager at <a href=https://nftport.xyz/>NFTPort</a>.
-                    I am interested in using software as a tool for solving meaningful problems.</p>
+<div id="cv" class="container-fluid text-center" style="width: 80%; background-color:rgba(255, 255, 255, 0.95); padding-top: 30px; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+    <div id="about" class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav"></div>
+            <div class="col-sm-8 text-left">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="documents/veljko.png" class="img-thumbnail" alt="veljko" width="200" height="200">
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="text-justify">I am an Engineering Manager at <a href=https://nftport.xyz/>NFTPort</a>.
+                        I am interested in using software as a tool for solving meaningful problems.</p>
 
-                    <p>email: byblos94 [at] gmail [dot] com</p>
-                    <a href="https://www.linkedin.com/in/veljko-vranic/"><img src="documents/linkedin.png" class="img-logo" alt="nftport" width="40" height="40"></a>
+                        <p>email: byblos94 [at] gmail [dot] com</p>
+                        <a href="https://www.linkedin.com/in/veljko-vranic/"><img src="documents/linkedin.png" class="img-logo" alt="nftport" width="40" height="40"></a>
 
-                    <a href="https://www.github.com/veljkovranic/"><img src="documents/github.png" class="img-logo" alt="nftport" width="40" height="40"></a>
+                        <a href="https://www.github.com/veljkovranic/"><img src="documents/github.png" class="img-logo" alt="nftport" width="40" height="40"></a>
 
-                    <a href="https://www.twitter.com/VeljkoVranic/"><img src="documents/twitter.png" class="img-logo" alt="nftport" width="40" height="40"></a>
+                        <a href="https://www.twitter.com/VeljkoVranic/"><img src="documents/twitter.png" class="img-logo" alt="nftport" width="40" height="40"></a>
+                    </div>
                 </div>
             </div>
+            <div class="col-sm-2 sidenav"></div>
         </div>
-        <div class="col-sm-3 sidenav"></div>
+    </div>
+
+
+    <div id="work" class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav"></div>
+            <div class="col-sm-8 text-justify">
+                <div class="row"><h3>Work experience</h3></div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="https://nftport.xyz/"><img src="documents/nftport.jpeg" class="img-thumbnail" alt="nftport" width="100" height="100"></a>
+                    </div>
+                    <div class="col-sm-8 text-left">
+                        <a href="https://nftport.xyz/"><h4>NFTPort</h4></a>
+                        <h5>Engineering Manager</h5>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <h4>Oct 2022 - now</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="https://mojito.xyz/"><img src="documents/mojito.jpeg" class="img-thumbnail" alt="mojito" width="100" height="100"></a>
+                    </div>
+                    <div class="col-sm-8 text-left">
+                        <a href="https://mojito.xyz/"><h4>Mojito</h4></a>
+                        <h5>Engineering Manager</h5>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <h4>Nov 2021 - Oct 2022</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2">
+                          <a href="https://www.lotusflare.com/"><img src="documents/lotusflare.jpeg" class="img-thumbnail" alt="lotusflare" width="100" height="100"></a>
+                    </div>
+                    <div class="col-sm-8 text-left">
+                        <a href="https://www.lotusflare.com/"><h4>LotusFlare</h4></a>
+                        <h5>Engineering Manager</h5>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <h4>Oct 2018 - Nov 2021</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="https://www.lotusflare.com/"><img src="documents/lotusflare.jpeg" class="img-thumbnail" alt="lotusflare" width="100" height="100"></a>
+                    </div>
+                    <div class="col-sm-8 text-left">
+                        <a href="https://www.lotusflare.com/"><h4>LotusFlare</h4></a>
+                        <h5>Full Stack Engineer</h5>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <h4>Jul 2016 - Oct 2018</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href=http://devana.rs/><img src="documents/devana.jpeg" class="img-thumbnail" alt="devana" width="100" height="100"></a>
+                    </div>
+                    <div class="col-sm-8 text-left">
+                        <a href=http://devana.rs/><h4>Devana Technologies</h4></a>
+                        <h5>Software Engineering Intern</h5>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <h4>Jul 2015 - Sep 2015</h4>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-sm-2 sidenav"></div>
+        </div>
+    </div>
+
+    <div id="education" class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav"></div>
+            <div class="col-sm-8 text-justify">
+                <div class="row"><h3>Education</h3></div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="https://www.matf.bg.ac.rs/"><img src="documents/matf.gif" class="img-thumbnail" alt="matf" width="100" height="100"></a>
+                    </div>
+                    <div class="col-sm-8 text-left">
+                        <a href="https://www.matf.bg.ac.rs/"><h4>Faculty of Matemathics, University of Belgrade, Serbia</h4></a>
+                        <h5>Bachelor of Science with Honours in Mathematics & Computer Science</h5>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <h4>Oct 2013 - July 2022</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="https://raf.edu.rs/"><img src="documents/raf.png" class="img-thumbnail" alt="raf" width="100" height="100"></a>
+                    </div>
+                    <div class="col-sm-8 text-left">
+                        <a href="https://raf.edu.rs/"><h4>School of Computing - Union University - Belgrade, Serbia</h4></a>
+                        <h5>Bachelor of Science with Honours in Computer Science</h5>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <h4>Oct 2013 - Oct 2016</h4>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-sm-2 sidenav"></div>
+        </div>
     </div>
 </div>
-
-
-<div id="work" class="container-fluid text-center">
-    <div class="row content">
-        <div class="col-sm-3 sidenav"></div>
-        <div class="col-sm-6 text-justify">
-            <div class="row"><h3>Work experience</h3></div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href="https://nftport.xyz/"><img src="documents/nftport.jpeg" class="img-thumbnail" alt="nftport" width="100" height="100"></a>
-                </div>
-                <div class="col-sm-6 text-left">
-                    <a href="https://nftport.xyz/"><h4>NFTPort</h4></a>
-                    <h5>Engineering Manager</h5>
-                </div>
-                <div class="col-sm-4 text-right">
-                    <h4>Oct 2022 - now</h4>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href="https://mojito.xyz/"><img src="documents/mojito.jpeg" class="img-thumbnail" alt="mojito" width="100" height="100"></a>
-                </div>
-                <div class="col-sm-6 text-left">
-                    <a href="https://mojito.xyz/"><h4>Mojito</h4></a>
-                    <h5>Engineering Manager</h5>
-                </div>
-                <div class="col-sm-4 text-right">
-                    <h4>Nov 2021 - Oct 2022</h4>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-2">
-                      <a href="https://www.lotusflare.com/"><img src="documents/lotusflare.jpeg" class="img-thumbnail" alt="lotusflare" width="100" height="100"></a>
-                </div>
-                <div class="col-sm-6 text-left">
-                    <a href="https://www.lotusflare.com/"><h4>LotusFlare</h4></a>
-                    <h5>Engineering Manager</h5>
-                </div>
-                <div class="col-sm-4 text-right">
-                    <h4>Oct 2018 - Nov 2021</h4>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href="https://www.lotusflare.com/"><img src="documents/lotusflare.jpeg" class="img-thumbnail" alt="lotusflare" width="100" height="100"></a>
-                </div>
-                <div class="col-sm-6 text-left">
-                    <a href="https://www.lotusflare.com/"><h4>LotusFlare</h4></a>
-                    <h5>Full Stack Engineer</h5>
-                </div>
-                <div class="col-sm-4 text-right">
-                    <h4>Jul 2016 - Oct 2018</h4>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href=http://devana.rs/><img src="documents/devana.jpeg" class="img-thumbnail" alt="devana" width="100" height="100"></a>
-                </div>
-                <div class="col-sm-6 text-left">
-                    <a href=http://devana.rs/><h4>Devana Technologies</h4></a>
-                    <h5>Software Engineering Intern</h5>
-                </div>
-                <div class="col-sm-4 text-right">
-                    <h4>Jul 2015 - Sep 2015</h4>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class="col-sm-3 sidenav"></div>
-    </div>
-</div>
-
-<div id="education" class="container-fluid text-center">
-    <div class="row content">
-        <div class="col-sm-3 sidenav"></div>
-        <div class="col-sm-6 text-justify">
-            <div class="row"><h3>Education</h3></div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href="https://www.matf.bg.ac.rs/"><img src="documents/matf.gif" class="img-thumbnail" alt="matf" width="100" height="100"></a>
-                </div>
-                <div class="col-sm-6 text-left">
-                    <a href="https://www.matf.bg.ac.rs/"><h4>Faculty of Matemathics, University of Belgrade, Serbia</h4></a>
-                    <h5>Bachelor of Science with Honours in Mathematics & Computer Science</h5>
-                </div>
-                <div class="col-sm-4 text-right">
-                    <h4>Oct 2013 - July 2022</h4>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-2">
-                    <a href="https://raf.edu.rs/"><img src="documents/raf.png" class="img-thumbnail" alt="raf" width="100" height="100"></a>
-                </div>
-                <div class="col-sm-6 text-left">
-                    <a href="https://raf.edu.rs/"><h4>School of Computing - Union University - Belgrade, Serbia</h4></a>
-                    <h5>Bachelor of Science with Honours in Computer Science</h5>
-                </div>
-                <div class="col-sm-4 text-right">
-                    <h4>Oct 2013 - Oct 2016</h4>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class="col-sm-3 sidenav"></div>
-    </div>
-</div>
-
 </body>
 </html>
